@@ -1,0 +1,405 @@
+// raddbg 0.9.30 user file
+
+window:
+{
+  size: 1696 1374
+  panels:
+  {
+    0.70: getting_started text:
+    {
+      selected
+      expression: "file:\"/home/tom/Code/odinrpg/src/battle.odin\".data"
+      project: ""
+      query: input: ""
+      cursor: 0x1224
+      mark: 0x1224
+    }
+    0.30:
+    {
+      0.25: watch:
+      {
+        expression: "query:targets"
+        selected
+      }
+      0.500000:
+      {
+        selected
+        watch:
+        {
+          selected
+          expression: ""
+          watch_expression:
+          {
+            project: ""
+            expression: "ba.cur.name"
+          }
+        }
+        text:
+        {
+          expression: "query:output"
+          query: input: ""
+          cursor: 0x0
+          mark: 0x0
+        }
+        watch: expression: "query:breakpoints"
+      }
+      0.250000:
+      {
+        watch: selected expression: "query:call_stack"
+        watch: expression: "query:threads"
+      }
+    }
+  }
+  split_x
+  pos
+  monitor
+}
+keybindings:
+{
+  { kill_all f5 shift }
+  { step_into_inst f11 alt }
+  { step_over_inst f10 alt }
+  { step_out f11 shift }
+  { halt x ctrl shift }
+  { halt pause }
+  { run f5 }
+  { restart f5 ctrl shift }
+  { step_into f11 }
+  { step_over f10 }
+  { run_to_line f10 ctrl }
+  { set_next_statement f10 ctrl shift }
+  { inc_window_font_size equal alt }
+  { dec_window_font_size minus alt }
+  { toggle_fullscreen return ctrl }
+  { new_panel_right p ctrl }
+  { new_panel_down minus ctrl }
+  { rotate_panel_columns 2 ctrl }
+  { next_panel comma ctrl }
+  { prev_panel comma ctrl shift }
+  { focus_panel_right right ctrl alt }
+  { focus_panel_left left ctrl alt }
+  { focus_panel_up up ctrl alt }
+  { focus_panel_down down ctrl alt }
+  { undo z ctrl }
+  { redo y ctrl }
+  { go_back left alt }
+  { go_forward right alt }
+  { close_panel p ctrl shift alt }
+  { next_tab page_down ctrl }
+  { prev_tab page_up ctrl }
+  { next_tab tab ctrl }
+  { prev_tab tab ctrl shift }
+  { move_tab_right page_down ctrl shift }
+  { move_tab_left page_up ctrl shift }
+  { close_tab w ctrl }
+  { tab_bar_top up ctrl shift alt }
+  { tab_bar_bottom down ctrl shift alt }
+  { open_tab t ctrl }
+  { tab_settings t ctrl alt }
+  { open o ctrl }
+  { open_source_file_from_debug_info i ctrl }
+  { switch_to_partner_file o alt }
+  { new_project n ctrl shift }
+  { open_project o ctrl shift }
+  { save_project s ctrl shift }
+  { edit f2 }
+  { accept return }
+  { accept space }
+  { cancel esc }
+  { focus_menu d alt }
+  { toggle_lock l ctrl }
+  { move_left left }
+  { move_right right }
+  { move_up up }
+  { move_down down }
+  { move_left_select left shift }
+  { move_right_select right shift }
+  { move_up_select up shift }
+  { move_down_select down shift }
+  { move_left_chunk left ctrl }
+  { move_right_chunk right ctrl }
+  { move_up_chunk up ctrl }
+  { move_down_chunk down ctrl }
+  { move_up_page page_up }
+  { move_down_page page_down }
+  { move_up_whole home ctrl }
+  { move_down_whole end ctrl }
+  { move_left_chunk_select left ctrl shift }
+  { move_right_chunk_select right ctrl shift }
+  { move_up_chunk_select up ctrl shift }
+  { move_down_chunk_select down ctrl shift }
+  { move_up_page_select page_up shift }
+  { move_down_page_select page_down shift }
+  { move_up_whole_select home ctrl shift }
+  { move_down_whole_select end ctrl shift }
+  { move_up_reorder up alt }
+  { move_down_reorder down alt }
+  { move_home home }
+  { move_end end }
+  { move_home_select home shift }
+  { move_end_select end shift }
+  { select_all a ctrl }
+  { delete_single delete }
+  { delete_chunk delete ctrl }
+  { backspace_single backspace }
+  { backspace_chunk backspace ctrl }
+  { copy c ctrl }
+  { copy insert ctrl }
+  { cut x ctrl }
+  { paste v ctrl }
+  { paste insert shift }
+  { insert_text null }
+  { move_next tab }
+  { move_prev tab shift }
+  { goto_line g ctrl }
+  { goto_address g alt }
+  { search f ctrl }
+  { search slash }
+  { search_backwards r ctrl }
+  { search_backwards slash ctrl }
+  { find_next f3 }
+  { find_prev f3 ctrl }
+  { find_selected_thread f4 }
+  { goto_name j ctrl }
+  { goto_name_at_cursor f12 }
+  { toggle_watch_expr_at_cursor w alt }
+  { toggle_watch_expr_at_mouse d ctrl }
+  { toggle_watch_pin f9 ctrl }
+  { toggle_breakpoint f9 }
+  { add_address_breakpoint f9 shift }
+  { add_function_breakpoint f9 ctrl shift }
+  { attach f6 shift }
+  { open_palette f1 }
+  { open_palette p ctrl shift }
+  { log_marker m ctrl shift alt }
+  { toggle_dev_menu d ctrl shift alt }
+}
+current_path: "/home/tom/Code/odinrpg"
+debug_info:
+{
+  path: "/home/tom/Code/odinrpg/odinrpg"
+  timestamp: 66228032774410
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libX11.so.6"
+  timestamp: 66227549472000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libm.so.6"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libc.so.6"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/lib64/ld-linux-x86-64.so.2"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb.so.1"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXau.so.6"
+  timestamp: 66168334589000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXdmcp.so.6"
+  timestamp: 66211487652000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXxf86vm.so.1"
+  timestamp: 66204799833000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXext.so.6"
+  timestamp: 66204798407000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXi.so.6"
+  timestamp: 66214983870000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXrandr.so.2"
+  timestamp: 66204799447000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXrender.so.1"
+  timestamp: 66168333224000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXcursor.so.1"
+  timestamp: 66164897222000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXfixes.so.3"
+  timestamp: 66191816105000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libXinerama.so.1"
+  timestamp: 66204798889000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libX11-xcb.so.1"
+  timestamp: 66227549472000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libGLX.so.0"
+  timestamp: 66184693464000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libGLdispatch.so.0"
+  timestamp: 66184693464000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libGLX_nvidia.so.0"
+  timestamp: 66225233692000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libnvidia-glsi.so.615.71.09"
+  timestamp: 66225233692000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libnvidia-tls.so.615.71.09"
+  timestamp: 66225233692000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libnvidia-glcore.so.615.71.09"
+  timestamp: 66225233692000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libdl.so.2"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libpthread.so.0"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/librt.so.1"
+  timestamp: 66226852536000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libnvidia-gpucomp.so.615.71.09"
+  timestamp: 66225233692000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-glx.so.0"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-randr.so.0"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-dri3.so.0"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-present.so.0"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-sync.so.1"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libxcb-xfixes.so.0"
+  timestamp: 66184635927000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libdbus-1.so.3"
+  timestamp: 66175513452000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libsystemd.so.0"
+  timestamp: 66226225854000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libgcc_s.so.1"
+  timestamp: 66222645306000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libdrm.so.2"
+  timestamp: 66216328784000
+  project: ""
+}
+debug_info:
+{
+  path: "/usr/lib/libnvidia-allocator.so.1"
+  timestamp: 66225233692000
+  project: ""
+}

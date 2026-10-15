@@ -1,0 +1,8 @@
+[SddmGreeterTheme]
+Name=Habamax
+Description=Minimal habamax login theme
+Author=Tom
+Version=1.0
+Type=sddm-theme
+MainScript=Main.qml
+QtVersion=6

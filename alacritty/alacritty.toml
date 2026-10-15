@@ -1,0 +1,113 @@
+[general]
+working_directory = "None"
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+WINIT_X11_SCALE_FACTOR = "1.0"
+
+[window]
+dimensions = { columns = 100, lines = 30 }
+# dynamic_padding = true
+padding.x = 14
+padding.y = 14
+decorations = "Full"
+opacity = 0.8
+title = "Alacritty@CachyOS"
+class = { instance = "Alacritty", general = "Alacritty" }
+decorations_theme_variant = "Dark"
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+normal = { family = "JetBrainsMono Nerd Font", style = "Regular" }
+bold = { family = "JetBrainsMono Nerd Font", style = "Bold" }
+italic = { family = "JetBrainsMono Nerd Font", style = "Italic" }
+bold_italic = { family = "JetBrainsMono Nerd Font", style = "Bold Italic" }
+size = 12.0
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true
+
+[cursor]
+# style = { shape = "Underline", blinking = "Off" }
+# unfocused_hollow = true
+# thickness = 0.15
+
+[mouse]
+hide_when_typing = true
+bindings = [
+{ mouse = "Middle", mods = "None", action = "PasteSelection" },
+]
+
+[keyboard]
+bindings = [
+{ key = "Paste", mods = "None", action = "Paste" },
+{ key = "Copy", mods = "None", action = "Copy" },
+{ key = "L", mods = "Control", action = "ClearLogNotice" },
+{ key = "L", mods = "Control", mode = "~Vi", chars = "\f" },
+{ key = "PageUp", mods = "Shift", mode = "~Alt", action = "ScrollPageUp" },
+{ key = "PageDown", mods = "Shift", mode = "~Alt", action = "ScrollPageDown" },
+{ key = "Home", mods = "Shift", mode = "~Alt", action = "ScrollToTop" },
+{ key = "End", mods = "Shift", mode = "~Alt", action = "ScrollToBottom" },
+{ key = "V", mods = "Control|Shift", action = "Paste" },
+{ key = "C", mods = "Control|Shift", action = "Copy" },
+{ key = "F", mods = "Control|Shift", action = "SearchForward" },
+{ key = "B", mods = "Control|Shift", action = "SearchBackward" },
+{ key = "C", mods = "Control|Shift", mode = "Vi", action = "ClearSelection" },
+{ key = "Key0", mods = "Control", action = "ResetFontSize" },
+]
+
+[colors]
+transparent_background_colors = true
+
+[colors.primary]
+background = "#1c1c1c"
+foreground = "#c7c7c7"
+
+[colors.cursor]
+text = "#1c1c1c"
+cursor = "#dadada"
+
+[colors.vi_mode_cursor]
+text = "#1c1c1c"
+cursor = "#dadada"
+
+[colors.search.matches]
+foreground = "#1c1c1c"
+background = "#d7af87"
+
+[colors.search.focused_match]
+foreground = "#1c1c1c"
+background = "#d75f87"
+
+[colors.footer_bar]
+foreground = "#1c1c1c"
+background = "#c7c7c7"
+
+[colors.selection]
+text = "#c7c7c7"
+background = "#3a3a3a"
+
+[colors.normal]
+black = "#1c1c1c"
+red = "#af5f5f"
+green = "#5faf5f"
+yellow = "#af875f"
+blue = "#5f87af"
+magenta = "#af87af"
+cyan = "#5f8787"
+white = "#9e9e9e"
+
+[colors.bright]
+black = "#767676"
+red = "#d75f87"
+green = "#87d787"
+yellow = "#d7af87"
+blue = "#5fafd7"
+magenta = "#d787d7"
+cyan = "#87afaf"
+white = "#c7c7c7"

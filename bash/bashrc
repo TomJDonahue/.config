@@ -1,0 +1,37 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+export PATH="$PATH:$HOME/odin"
+export PATH="$PATH:$HOME/Code/01_scripts"
+
+export HISTFILE="$HOME/.config/bash/bash_history"
+
+__git_branch() {
+    local b
+    b=$(git symbolic-ref --short -q HEAD 2>/dev/null || git rev-parse --short HEAD 2>/dev/null) || return
+    [ -n "$b" ] && printf ' (%s)' "$b"
+}
+
+__c_dir='\[\e[38;5;131m\]'   # habamax red
+__c_git='\[\e[38;5;110m\]'   # blue (108 for green)
+__c_rst='\[\e[0m\]'
+
+PS1="${__c_dir}\W${__c_rst}${__c_git}\$(__git_branch)${__c_rst} \\$ "
+
+eval "$(zoxide init bash)"
+alias cd='z'
+alias grep='grep --color=auto'
+
+alias ls="eza -lh --icons --group-directories-first"
+alias ll="eza -l"
+alias la="eza -la"
+alias lt="eza --tree --level=2 --long --icons --git"
+alias l="eza -lah"
+alias lg="eza -lah --git"
+alias tree="eza --tree"
+
+alias :q="exit"
